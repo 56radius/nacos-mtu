@@ -106,36 +106,37 @@ function HomeScreen() {
       </header>
 
       {/* Second header */}
-      <section id="hero" className="d-flex align-items-center">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1 style={{color: "#fff"}}>
-               POWERED BY <br /> COMPUTER SCIENCE
-              </h1>
-              <ul>
-                <h2 style={{color: "#fff"}}> 
-                 Empowered to Excel
-                </h2>
-              </ul>
-              <div className="mt-3">
-                <button
-                  style={{
-                    borderWidth: 0,
-                  }}
-                  onClick={() => navigate("/register")}
-                  className="btn-get-started scrollto"
-                >
-                  {" "}
-                  Learn About{" "}
-                </button>
-              </div>
-            </div>
-          
-          </div>
-          
+      <section id="hero" className="d-flex align-items-center position-relative">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1 style={{color: "#fff"}}>
+         POWERED BY <br /> COMPUTER SCIENCE
+        </h1>
+        <ul>
+          <h2 style={{color: "#fff"}}> 
+           Empowered to Excel
+          </h2>
+        </ul>
+        <div className="mt-3">
+          <button
+            style={{
+              borderWidth: 0,
+            }}
+            onClick={() => navigate("/register")}
+            className="btn-get-started scrollto"
+          >
+            {" "}
+            Learn About{" "}
+          </button>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+  <div className="position-absolute bottom-0 end-0">
+    <img src={bottomright} alt="bottomright" />
+  </div>
+</section>
 
       {/* Third section */}
       <section id="services" className="services">
