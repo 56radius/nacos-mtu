@@ -27,7 +27,7 @@ function HomeScreen() {
       <header id="header" className="fixed-top ">
         <div className="container d-flex align-items-center justify-content-between">
           <h1 className="logo">
-            <img src={logo} alt="logo" className="logo" />
+            <img style={{}}  src={logo} alt="logo" className="logo" />
             
             <button
               style={{
@@ -93,7 +93,7 @@ function HomeScreen() {
               </li>
               <li>
                 <a
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", }}
                   className="getstarted scrollto"
                   onClick={() => navigate("/login")}
                 >
@@ -111,19 +111,13 @@ function HomeScreen() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1>
-                {" "}
-                Revitalize Your Mind and Body with AVA, AI-powered therapy{" "}
+              <h1 style={{color: "#fff"}}>
+               POWERED BY <br /> COMPUTER SCIENCE
               </h1>
               <ul>
-                <p>
-                  Welcome to our AI-powered mind therapy app. Our cutting-edge
-                  tehcnology provides personalized solutions to improve your
-                  mental health. Our team of experts created an AI, AVA(Avinx
-                  Virtual Assistant) to tailor therapy programs to your unique
-                  needs, helping you achieve your goals. Say goodbye to anxiety
-                  and stress.
-                </p>
+                <h2 style={{color: "#fff"}}> 
+                 Empowered to Excel
+                </h2>
               </ul>
               <div className="mt-3">
                 <button
@@ -134,13 +128,11 @@ function HomeScreen() {
                   className="btn-get-started scrollto"
                 >
                   {" "}
-                  Get Started{" "}
+                  Learn About{" "}
                 </button>
               </div>
             </div>
-            <div className="col-lg-6 order-1 order-lg-2 hero-img">
-              <img src={mind} className="img-fluid" alt="mind" />
-            </div>
+          
           </div>
         </div>
       </section>
