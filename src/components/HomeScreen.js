@@ -133,6 +133,10 @@ function HomeScreen() {
       </div>
     </div>
   </div>
+ 
+
+
+  {/* BOTTOM RIGHT IMAGE */}
   <div className="position-absolute bottom-0 end-0">
     <img src={bottomright} alt="bottomright" />
   </div>
