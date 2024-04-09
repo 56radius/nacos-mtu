@@ -65,6 +65,18 @@ h6 {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .position-absolute.bottom-0.start-0 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .position-absolute.bottom-0.start-0 h2{
+    visibility: hidden;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
