@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import bottomright from "../assets/img/bottomright.png";
 import mtulogo from "../assets/img/mtulogo.png";
+import nacoslogo from "../assets/img/nacoslogo.png";
 import ".././assets/css/style.css";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
 import ".././assets/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -113,6 +114,10 @@ function HomeScreen() {
           </div>
         </div>
         <div className="position-absolute bottom-0 start-0">
+          <img src={nacoslogo} alt="nacoslogo" />
+                  
+            <span style={{fontSize: "420%", color: "#fff"}}> | </span>
+         
           <img src={mtulogo} alt="mtulogo" />
         </div>
         <div className="position-absolute bottom-0 end-0">
