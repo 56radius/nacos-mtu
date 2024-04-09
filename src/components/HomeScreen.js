@@ -26,16 +26,20 @@ function HomeScreen() {
       <header id="header" className="fixed-top ">
         <div className="container d-flex align-items-center justify-content-between">
           <h1 className="logo">
+
+            
             <button
               style={{
                 borderWidth: 0,
                 borderColor: "#fff",
                 background: "#fff",
-                color: "blue",
+                color: "#083A00",
+                fontWeight: 'bold',
+                fontSize: "60%"
               }}
               href="index.html"
             >
-              Avinx
+              NACOS MTU
             </button>
           </h1>
           {/* 
