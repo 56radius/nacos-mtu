@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 //importing images
 import mind from ".././assets/img/health.png";
 import health from "../assets/img/mind.png";
+import logo from "../assets/img/logo.png";
 
 //importing css code
 import ".././assets/css/style.css";
@@ -26,7 +27,7 @@ function HomeScreen() {
       <header id="header" className="fixed-top ">
         <div className="container d-flex align-items-center justify-content-between">
           <h1 className="logo">
-
+            <img src={logo} alt="logo" className="logo" />
             
             <button
               style={{
@@ -57,25 +58,37 @@ function HomeScreen() {
               <li>
                 <a className="nav-link scrollto" href="#services">
                   {" "}
-                  Services{" "}
+                About {" "}
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#about">
                   {" "}
-                  About{" "}
+                 Events{" "}
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#team">
                   {" "}
-                  Donate{" "}
+                  Library{" "}
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#contact">
                   {" "}
-                  Contact{" "}
+                  Qhub {" "}
+                </a>
+              </li>
+              <li>
+                <a className="nav-link scrollto" href="#contact">
+                  {" "}
+                  Resources {" "}
+                </a>
+              </li>
+              <li>
+                <a className="nav-link scrollto" href="#contact">
+                  {" "}
+                  Alumni {" "}
                 </a>
               </li>
               <li>
@@ -84,8 +97,7 @@ function HomeScreen() {
                   className="getstarted scrollto"
                   onClick={() => navigate("/login")}
                 >
-                  {" "}
-                  Try AVA{" "}
+                  Contact Us
                 </a>
               </li>
             </ul>
