@@ -4,9 +4,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 //importing images
-import mind from ".././assets/img/health.png";
-import health from "../assets/img/mind.png";
 import logo from "../assets/img/logo.png";
+import bottomright from "../assets/img/bottomright.png";
 
 //importing css code
 import ".././assets/css/style.css";
@@ -134,6 +133,7 @@ function HomeScreen() {
             </div>
           
           </div>
+          
         </div>
       </section>
 
@@ -220,12 +220,15 @@ function HomeScreen() {
           <div className="row content">
             <div className="col-lg-6">
               <div className="col-lg-6 order-1 order-lg-2 hero-img">
+                {/*}
                 <img
                   src={health}
                   style={{width: 1350}}
                   className="img-fluid"
                   alt=""
                 />
+
+*/}
               </div>
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0">
