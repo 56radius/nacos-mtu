@@ -1,16 +1,9 @@
 import React from "react";
-
-//importing navigation
 import { useNavigate } from "react-router-dom";
-
-//importing images
 import logo from "../assets/img/logo.png";
 import bottomright from "../assets/img/bottomright.png";
-
-//importing css code
+import mtulogo from "../assets/img/mtulogo.png";
 import ".././assets/css/style.css";
-
-//importing css vendor variables
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
 import ".././assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import ".././assets/vendor/boxicons/css/boxicons.min.css";
@@ -23,76 +16,64 @@ function HomeScreen() {
   return (
     <div>
       {/* first header */}
-      <header id="header" className="fixed-top ">
+      <header id="header" className="fixed-top">
         <div className="container d-flex align-items-center justify-content-between">
           <h1 className="logo">
-            <img style={{}}  src={logo} alt="logo" className="logo" />
-            
+            <img src={logo} alt="logo" className="logo" />
             <button
               style={{
                 borderWidth: 0,
                 borderColor: "#fff",
                 background: "#fff",
                 color: "#083A00",
-                fontWeight: 'bold',
-                fontSize: "60%"
+                fontWeight: "bold",
+                fontSize: "60%",
               }}
               href="index.html"
             >
               NACOS MTU
             </button>
           </h1>
-          {/* 
-      <a href="index.html" className="logo"><img src="assets/img/logo.png" alt="" className="img-fluid"></a> */}
-
           <nav id="navbar" className="navbar">
             <ul>
               <li>
                 <a className="nav-link scrollto active" href="#hero">
-                  {" "}
-                  <span id="Love"> Home </span>{" "}
+                  <span id="Love"> Home </span>
                 </a>
               </li>
-
               <li>
                 <a className="nav-link scrollto" href="#services">
-                  {" "}
-                About {" "}
+                  About
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#about">
-                  {" "}
-                 Events{" "}
+                  Events
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#team">
-                  {" "}
-                  Library{" "}
+                  Library
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#contact">
-                  {" "}
-                  Qhub {" "}
+                  Qhub
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#contact">
-                  {" "}
-                  Resources {" "}
+                  Resources
                 </a>
               </li>
               <li>
                 <a className="nav-link scrollto" href="#contact">
-                  {" "}
-                  Alumni {" "}
+                  Alumni
                 </a>
               </li>
               <li>
                 <a
-                  style={{ textDecoration: "none", }}
+                  style={{ textDecoration: "none" }}
                   className="getstarted scrollto"
                   onClick={() => navigate("/login")}
                 >
@@ -107,40 +88,37 @@ function HomeScreen() {
 
       {/* Second header */}
       <section id="hero" className="d-flex align-items-center position-relative">
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-        <h1 style={{color: "#fff"}}>
-         POWERED BY <br /> COMPUTER SCIENCE
-        </h1>
-        <ul>
-          <h2 style={{color: "#fff"}}> 
-           Empowered to Excel
-          </h2>
-        </ul>
-        <div className="mt-3">
-          <button
-            style={{
-              borderWidth: 0,
-            }}
-            onClick={() => navigate("/register")}
-            className="btn-get-started scrollto"
-          >
-            {" "}
-            Learn About{" "}
-          </button>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+              <h1 style={{ color: "#fff" }}>
+                POWERED BY <br /> COMPUTER SCIENCE
+              </h1>
+              <ul>
+                <h2 style={{ color: "#fff" }}> Empowered to Excel </h2>
+              </ul>
+              <div className="mt-3">
+                <button
+                  style={{
+                    borderWidth: 0,
+                  }}
+                  onClick={() => navigate("/register")}
+                  className="btn-get-started scrollto"
+                >
+                  {" "}
+                  Learn About{" "}
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
- 
-
-
-  {/* BOTTOM RIGHT IMAGE */}
-  <div className="position-absolute bottom-0 end-0">
-    <img src={bottomright} alt="bottomright" />
-  </div>
-</section>
+        <div className="position-absolute bottom-0 start-0">
+          <img src={mtulogo} alt="mtulogo" />
+        </div>
+        <div className="position-absolute bottom-0 end-0">
+          <img src={bottomright} alt="bottomright" />
+        </div>
+      </section>
 
       {/* Third section */}
       <section id="services" className="services">
@@ -216,7 +194,6 @@ function HomeScreen() {
         </div>
       </section>
 
-      
       <section id="about" className="about">
         <div className="container">
           <div className="section-title">
@@ -238,14 +215,26 @@ function HomeScreen() {
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0">
               <p>
-                <span style={{fontWeight: 'bold', fontSize: 50}}>
-                  AVA's
-                </span>
-                distinctive edge lies in its dedication to simplicity and accessibility, mirroring the essence of mental health care. Just as AVA prioritizes ease of use and affordability in financial services, it champions these values in mental health support, ensuring that individuals facing mental health challenges can readily access the care they need. Our commitment extends to breaking down barriers for the underbanked and unbanked, aligning with the ethos of inclusivity crucial in mental health services.
+                <span style={{ fontWeight: "bold", fontSize: 50 }}>AVA's</span>
+                distinctive edge lies in its dedication to simplicity and
+                accessibility, mirroring the essence of mental health care. Just
+                as AVA prioritizes ease of use and affordability in financial
+                services, it champions these values in mental health support,
+                ensuring that individuals facing mental health challenges can
+                readily access the care they need. Our commitment extends to
+                breaking down barriers for the underbanked and unbanked,
+                aligning with the ethos of inclusivity crucial in mental health
+                services.
               </p>
 
               <p className="fst-italic">
-              Drawing parallels to our customer acquisition channels, which utilize community mobilization and social media outreach, we recognize the importance of community engagement and online platforms in mental health awareness. By leveraging these channels effectively, we can reach individuals who may be struggling silently, offering them avenues to seek support and guidance.
+                Drawing parallels to our customer acquisition channels, which
+                utilize community mobilization and social media outreach, we
+                recognize the importance of community engagement and online
+                platforms in mental health awareness. By leveraging these
+                channels effectively, we can reach individuals who may be
+                struggling silently, offering them avenues to seek support and
+                guidance.
               </p>
             </div>
           </div>
@@ -253,24 +242,20 @@ function HomeScreen() {
       </section>
 
       {/* parallax effect */}
-      <section style={{ position: 'relative', height: 700}}> 
-    <div class="p-one parallax-inner">
-      <h2 style={{fontWeight: 'bold'}}> AVINX HEALTH </h2>
-    </div>
+      <section style={{ position: "relative", height: 700 }}>
+        <div class="p-one parallax-inner">
+          <h2 style={{ fontWeight: "bold" }}>AVINX HEALTH</h2>
+        </div>
       </section>
 
-  
-
-  {/* Contact */}
-  <section id="contact" className="about">
-  <div className="container" data-aos="fade-up">
+      {/* Contact */}
+      <section id="contact" className="about">
+        <div className="container" data-aos="fade-up">
           <div className="section-title">
-            <h2> Contact </h2> 
+            <h2>Contact</h2>
           </div>
-          </div>
+        </div>
       </section>
-
-      {/* Footer */}
     </div>
   );
 }
