@@ -4,6 +4,7 @@ import logo from "../assets/img/logo.png";
 import bottomright from "../assets/img/bottomright.png";
 import mtulogo from "../assets/img/mtulogo.png";
 import nacoslogo from "../assets/img/nacoslogo.png";
+import aboutlogo from "../assets/img/aboutlogo.png";
 import ".././assets/css/style.css";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
 import ".././assets/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -43,12 +44,12 @@ function HomeScreen() {
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#services">
+                <a className="nav-link scrollto" href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#about">
+                <a className="nav-link scrollto" href="#services">
                   Events
                 </a>
               </li>
@@ -117,7 +118,7 @@ function HomeScreen() {
           <img src={nacoslogo} alt="nacoslogo" />
           <span style={{ fontSize: "420%", color: "#fff" }}> | </span>
           <img src={mtulogo} alt="mtulogo" />
-          <h2 style={{ color: "#fff", marginLeft: "10px" }}>
+          <h2 style={{ color: "#fff", marginLeft: "10px", fontSize: "100%" }}>
             IN ASSOCIATION WITH
             <br />
             THE NIGERIAN ASSOCIATION OF COMPUTING STUDENTS
@@ -129,6 +130,39 @@ function HomeScreen() {
           <img src={bottomright} alt="bottomright" />
         </div>
       </section>
+
+
+      <section id="about" className="about">
+        <div className="container">
+          <div className="section-title">
+           
+          </div>
+          <div className="row content">
+          <div className="col-lg-6 pt-4 pt-lg-0">
+              <p style={{fontFamily: "Cabinet Grotesk", fontSize: "140%"}}>
+              The Nigerian Association of Computing Students (NACOS) is a student professional body with presence in almost all tertiary institutions in Nigeria (both private and government owned). NACOS was founded by groups of students in July 1993 with the backing of Nigerian Computer Society (NCS) as its parent body. It provides avenues for students (in any IT related field) to highlight and champion issues of interest in a coordinated and organized manner.
+                
+              </p>
+
+             
+            </div>
+            <div className="col-lg-6">
+              <div className="col-lg-6 order-1 order-lg-2 hero-img">
+              
+                <img
+                  src={aboutlogo}
+                  style={{width: 1350}}
+                  className="img-fluid"
+                  alt="aboutlogo"
+                />
+           
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
 
       {/* Third section */}
       <section id="services" className="services">
@@ -199,53 +233,6 @@ function HomeScreen() {
                   techniques.{" "}
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="about">
-        <div className="container">
-          <div className="section-title">
-            <h2>About</h2>
-          </div>
-          <div className="row content">
-            <div className="col-lg-6">
-              <div className="col-lg-6 order-1 order-lg-2 hero-img">
-                {/*}
-                <img
-                  src={health}
-                  style={{width: 1350}}
-                  className="img-fluid"
-                  alt=""
-                />
-
-*/}
-              </div>
-            </div>
-            <div className="col-lg-6 pt-4 pt-lg-0">
-              <p>
-                <span style={{ fontWeight: "bold", fontSize: 50 }}>AVA's</span>
-                distinctive edge lies in its dedication to simplicity and
-                accessibility, mirroring the essence of mental health care. Just
-                as AVA prioritizes ease of use and affordability in financial
-                services, it champions these values in mental health support,
-                ensuring that individuals facing mental health challenges can
-                readily access the care they need. Our commitment extends to
-                breaking down barriers for the underbanked and unbanked,
-                aligning with the ethos of inclusivity crucial in mental health
-                services.
-              </p>
-
-              <p className="fst-italic">
-                Drawing parallels to our customer acquisition channels, which
-                utilize community mobilization and social media outreach, we
-                recognize the importance of community engagement and online
-                platforms in mental health awareness. By leveraging these
-                channels effectively, we can reach individuals who may be
-                struggling silently, offering them avenues to seek support and
-                guidance.
-              </p>
             </div>
           </div>
         </div>
