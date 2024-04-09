@@ -113,12 +113,17 @@ function HomeScreen() {
             </div>
           </div>
         </div>
-        <div className="position-absolute bottom-0 start-0">
+        <div className="position-absolute bottom-0 start-0 d-flex align-items-center">
           <img src={nacoslogo} alt="nacoslogo" />
-                  
-            <span style={{fontSize: "420%", color: "#fff"}}> | </span>
-         
+          <span style={{ fontSize: "420%", color: "#fff" }}> | </span>
           <img src={mtulogo} alt="mtulogo" />
+          <h2 style={{ color: "#fff", marginLeft: "10px" }}>
+            IN ASSOCIATION WITH
+            <br />
+            THE NIGERIAN ASSOCIATION OF COMPUTING STUDENTS
+            <br />
+            AND MOUNTAIN TOP UNIVERSITY
+          </h2>
         </div>
         <div className="position-absolute bottom-0 end-0">
           <img src={bottomright} alt="bottomright" />
