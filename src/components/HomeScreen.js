@@ -1,10 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+
+
 import logo from "../assets/img/logo.png";
 import bottomright from "../assets/img/bottomright.png";
 import mtulogo from "../assets/img/mtulogo.png";
 import nacoslogo from "../assets/img/nacoslogo.png";
 import aboutlogo from "../assets/img/aboutlogo.png";
+import secondabout from "../assets/img/secondabout.png";
+import question from "../assets/img/question.png";
+
 import ".././assets/css/style.css";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
 import ".././assets/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -132,25 +137,59 @@ function HomeScreen() {
       </section>
 
 
+     {/* First About */}
       <section id="about" className="about">
         <div className="container">
           <div className="section-title">
            
           </div>
           <div className="row content">
-          <div className="col-lg-6 pt-4 pt-lg-0">
+          <div className="col-lg-6">
+              <div >
+              <div>
+                <img src={question} alt="question" />
+                <h2 style={{color: "black"}}> About NACOS </h2>
+                <p style={{fontFamily: "Cabinet Grotesk"}}> Brief History of NACOS NATIONAL </p>
+              </div>
               <p style={{fontFamily: "Cabinet Grotesk", fontSize: "140%"}}>
               The Nigerian Association of Computing Students (NACOS) is a student professional body with presence in almost all tertiary institutions in Nigeria (both private and government owned). NACOS was founded by groups of students in July 1993 with the backing of Nigerian Computer Society (NCS) as its parent body. It provides avenues for students (in any IT related field) to highlight and champion issues of interest in a coordinated and organized manner.
                 
               </p>
+           
+              </div>
+            </div>
+          <div className="col-lg-6 pt-4 pt-lg-0">
+          <div className="col-lg-6 order-1 order-lg-2 hero-img">
+              
+              <img
+                src={aboutlogo}
+                style={{width: 1350}}
+                className="img-fluid"
+                alt="aboutlogo"
+              />
+         
+            </div>
 
              
             </div>
-            <div className="col-lg-6">
+     
+            
+          </div>
+        </div>
+      </section>
+
+      {/* Secomd About section */}
+      <section id="about" className="about">
+        <div className="container">
+          <div className="section-title">
+           
+          </div>
+          <div className="row content">
+          <div className="col-lg-6">
               <div className="col-lg-6 order-1 order-lg-2 hero-img">
               
                 <img
-                  src={aboutlogo}
+                  src={secondabout}
                   style={{width: 1350}}
                   className="img-fluid"
                   alt="aboutlogo"
@@ -158,10 +197,26 @@ function HomeScreen() {
            
               </div>
             </div>
+          <div className="col-lg-6 pt-4 pt-lg-0">
+            <div>
+            <h2 style={{color: "black"}}> NACOS MTU </h2>
+            <p style={{fontFamily: "Cabinet Grotesk"}}> Brief History of NACOS MTU CHAPTER </p>
+            </div>
+                  <img src={question} alt="question" />
+              <p style={{fontFamily: "Cabinet Grotesk", fontSize: "140%"}}>
+              The Nigerian Association of Computing Students (NACOS) is a student professional body that is now present in almost every tertiary institution in Nigeria. The primary aim is to connect all students and alumna of the college of computing to each other. NACOS came to Mountain Top University in 2021 and the MTU Chapter has grown rapidly since then. 
+                
+              </p>
+
+             
+            </div>
+     
             
           </div>
         </div>
       </section>
+
+      {/* Executives section */}
 
 
       {/* Third section */}
