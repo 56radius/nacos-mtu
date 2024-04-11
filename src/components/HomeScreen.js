@@ -1,7 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
-
 import logo from "../assets/img/logo.png";
 import bottomright from "../assets/img/bottomright.png";
 import mtulogo from "../assets/img/mtulogo.png";
@@ -9,6 +7,7 @@ import nacoslogo from "../assets/img/nacoslogo.png";
 import aboutlogo from "../assets/img/aboutlogo.png";
 import secondabout from "../assets/img/secondabout.png";
 import question from "../assets/img/question.png";
+import background from "../assets/img/frame.jpg"; // Path to your background image
 
 import ".././assets/css/style.css";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
@@ -120,103 +119,85 @@ function HomeScreen() {
           </div>
         </div>
         <div className="position-absolute bottom-0 start-0 d-flex align-items-center" style={{ marginLeft: "250px" , marginBottom: "20px"}}>
-  <img src={nacoslogo} alt="nacoslogo" />
-  <span style={{ fontSize: "420%", color: "#fff" }}> | </span>
-  <img src={mtulogo} alt="mtulogo" />
-  <h2 style={{ color: "#fff", marginLeft: "10px", fontSize: "100%" }}>
-    IN ASSOCIATION WITH
-    <br />
-    THE NIGERIAN ASSOCIATION OF COMPUTING STUDENTS
-    <br />
-    AND MOUNTAIN TOP UNIVERSITY
-  </h2>
-</div>
+          <img src={nacoslogo} alt="nacoslogo" />
+          <span style={{ fontSize: "420%", color: "#fff" }}> | </span>
+          <img src={mtulogo} alt="mtulogo" />
+          <h2 style={{ color: "#fff", marginLeft: "10px", fontSize: "100%" }}>
+            IN ASSOCIATION WITH
+            <br />
+            THE NIGERIAN ASSOCIATION OF COMPUTING STUDENTS
+            <br />
+            AND MOUNTAIN TOP UNIVERSITY
+          </h2>
+        </div>
         <div className="position-absolute bottom-0 end-0">
           <img src={bottomright} alt="bottomright" />
         </div>
       </section>
 
-
-     {/* First About */}
-     <section id="about" className="about">
-  <div className="container">
-    <div className="section-title"></div>
-    <div className="row content">
-      <div className="col-lg-6">
-        <div>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <img src={question} alt="question" style={{ marginRight: "20px" }} />
-            <div>
-              <h2 style={{ color: "#000000", fontSize: "230%"}}> About NACOS </h2>
-              <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Brief History of NACOS National </h3>
-            </div>
-          </div> <br/>
-          <p style={{ fontFamily: "Cabinet Grotesk", fontSize: "140%" }}>
-            The Nigerian Association of Computing Students (NACOS) is a student professional body with presence in almost all tertiary institutions in Nigeria (both private and government owned). NACOS was founded by groups of students in July 1993 with the backing of Nigerian Computer Society (NCS) as its parent body. It provides avenues for students (in any IT related field) to highlight and champion issues of interest in a coordinated and organized manner.
-          </p>
-        </div>
-      </div>
-      <div className="col-lg-6 pt-4 pt-lg-0">
-        <div className="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src={aboutlogo} style={{ width: 1350 }} className="img-fluid" alt="aboutlogo" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-      {/* Secomd About section */}
-      <section id="about" className="about">
+      {/* First About */}
+      <section id="about" className="about" style={{ backgroundImage: `url(${background})` }}>
         <div className="container">
-          <div className="section-title">
-           
-          </div>
+          <div className="section-title"></div>
           <div className="row content">
-          <div className="col-lg-6">
+            <div className="col-lg-6">
+              <div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <img src={question} alt="question" style={{ marginRight: "20px" }} />
+                  <div>
+                    <h2 style={{ color: "#000000", fontSize: "230%"}}> About NACOS </h2>
+                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Brief History of NACOS National </h3>
+                  </div>
+                </div> <br/>
+                <p style={{ fontFamily: "Cabinet Grotesk", fontSize: "140%" }}>
+                  The Nigerian Association of Computing Students (NACOS) is a student professional body with presence in almost all tertiary institutions in Nigeria (both private and government owned). NACOS was founded by groups of students in July 1993 with the backing of Nigerian Computer Society (NCS) as its parent body. It provides avenues for students (in any IT related field) to highlight and champion issues of interest in a coordinated and organized manner.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6 pt-4 pt-lg-0">
               <div className="col-lg-6 order-1 order-lg-2 hero-img">
-              
+                <img src={aboutlogo} style={{ width: 1350 }} className="img-fluid" alt="aboutlogo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Second About section */}
+      <section id="about" className="about" style={{ backgroundImage: `url(${background})` }}>
+        <div className="container">
+          <div className="section-title"></div>
+          <div className="row content">
+            <div className="col-lg-6">
+              <div className="col-lg-6 order-1 order-lg-2 hero-img">
                 <img
                   src={secondabout}
                   style={{width: 1350}}
                   className="img-fluid"
                   alt="aboutlogo"
                 />
-           
               </div>
             </div>
-          <div className="col-lg-6 pt-4 pt-lg-0">
-            <div>
-            <h2 style={{color: "black"}}> NACOS MTU </h2>
-            <p style={{fontFamily: "Cabinet Grotesk"}}> Brief History of NACOS MTU CHAPTER </p>
-             <img src={question} alt="question" />
-            </div>
-                 
+            <div className="col-lg-6 pt-4 pt-lg-0">
+              <div>
+                <h2 style={{color: "black"}}> NACOS MTU </h2>
+                <p style={{fontFamily: "Cabinet Grotesk"}}> Brief History of NACOS MTU CHAPTER </p>
+                <img src={question} alt="question" />
+              </div>
               <p style={{fontFamily: "Cabinet Grotesk", fontSize: "140%"}}>
-              The Nigerian Association of Computing Students (NACOS) is a student professional body that is now present in almost every tertiary institution in Nigeria. The primary aim is to connect all students and alumna of the college of computing to each other. NACOS came to Mountain Top University in 2021 and the MTU Chapter has grown rapidly since then. 
-                
+                The Nigerian Association of Computing Students (NACOS) is a student professional body that is now present in almost every tertiary institution in Nigeria. The primary aim is to connect all students and alumna of the college of computing to each other. NACOS came to Mountain Top University in 2021 and the MTU Chapter has grown rapidly since then. 
               </p>
-
-             
             </div>
-     
-            
           </div>
         </div>
       </section>
 
       {/* Executives section */}
-
-
-      {/* Third section */}
-      <section id="services" className="services">
+      <section id="services" className="services" style={{ backgroundImage: `url(${background})` }}>
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2> Executives </h2>
           </div>
-
-      
         </div>
       </section>
     </div>
