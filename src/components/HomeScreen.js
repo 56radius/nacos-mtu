@@ -218,8 +218,14 @@ function HomeScreen() {
               <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "80px",  width: "80px" }} />
             </div>
           </div>
+
+          <div>
+            <img src={nacoslogo} alt="nacoslogo" />
+          </div>
         </div>
       </section>
+
+      {/* Events */}
     </div>
   );
 }
