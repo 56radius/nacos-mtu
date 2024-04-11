@@ -212,10 +212,11 @@ function HomeScreen() {
                     <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Meet the Executtive Committee </h3>
                   </div>
                 </div> <br/>
-                  <img src={rightarrow} alt="rightarrow" />
               </div>
             </div>
-           
+            <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
+              <img src={rightarrow} alt="rightarrow" />
+            </div>
           </div>
         </div>
       </section>
