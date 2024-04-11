@@ -20,7 +20,7 @@ import ".././assets/vendor/swiper/swiper-bundle.min.css";
 function HomeScreen() {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="wrapper" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
       {/* first header */}
       <header id="header" className="fixed-top">
         <div className="container d-flex align-items-center justify-content-between">
@@ -136,7 +136,7 @@ function HomeScreen() {
       </section>
 
       {/* First About */}
-      <section id="about" className="about" style={{ backgroundImage: `url(${background})` }}>
+      <section id="about" className="about">
         <div className="container">
           <div className="section-title"></div>
           <div className="row content">
@@ -164,7 +164,7 @@ function HomeScreen() {
       </section>
 
       {/* Second About section */}
-      <section id="about" className="about" style={{ backgroundImage: `url(${background})` }}>
+      <section id="about" className="about">
         <div className="container">
           <div className="section-title"></div>
           <div className="row content">
@@ -180,9 +180,13 @@ function HomeScreen() {
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0">
               <div>
-                <h2 style={{color: "black"}}> NACOS MTU </h2>
-                <p style={{fontFamily: "Cabinet Grotesk"}}> Brief History of NACOS MTU CHAPTER </p>
-                <img src={question} alt="question" />
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <div>
+                    <h2 style={{color: "black"}}> NACOS MTU </h2>
+                    <p style={{fontFamily: "Cabinet Grotesk"}}> Brief History of NACOS MTU CHAPTER </p>
+                  </div>
+                  <img src={question} alt="question" style={{ marginLeft: "20px" }} />
+                </div>
               </div>
               <p style={{fontFamily: "Cabinet Grotesk", fontSize: "140%"}}>
                 The Nigerian Association of Computing Students (NACOS) is a student professional body that is now present in almost every tertiary institution in Nigeria. The primary aim is to connect all students and alumna of the college of computing to each other. NACOS came to Mountain Top University in 2021 and the MTU Chapter has grown rapidly since then. 
@@ -193,7 +197,7 @@ function HomeScreen() {
       </section>
 
       {/* Executives section */}
-      <section id="services" className="services" style={{ backgroundImage: `url(${background})` }}>
+      <section id="services" className="services">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2> Executives </h2>
