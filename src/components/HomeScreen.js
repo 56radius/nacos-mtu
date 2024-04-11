@@ -158,12 +158,13 @@ function HomeScreen() {
       </div>
       <div className="col-lg-6 pt-4 pt-lg-0">
         <div className="col-lg-6 order-1 order-lg-2 hero-img">
-          <img  src={aboutlogo} style={{ width: 1350 }} className="img-fluid" alt="aboutlogo" />
+          <img src={aboutlogo} style={{ width: 1350 }} className="img-fluid" alt="aboutlogo" />
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
       {/* Secomd About section */}
@@ -216,17 +217,6 @@ function HomeScreen() {
           </div>
 
       
-        </div>
-      </section>
-
-   
-
-      {/* Contact */}
-      <section id="contact" className="about">
-        <div className="container" data-aos="fade-up">
-          <div className="section-title">
-            <h2>Contact</h2>
-          </div>
         </div>
       </section>
     </div>
