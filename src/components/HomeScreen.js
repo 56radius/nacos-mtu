@@ -8,6 +8,8 @@ import aboutlogo from "../assets/img/aboutlogo.png";
 import secondabout from "../assets/img/secondabout.png";
 import question from "../assets/img/question.png";
 import background from "../assets/img/frame.jpg"; // Path to your background image
+import user from "../assets/img/user.png";
+import rightarrow from "../assets/img/rightarrow.png";
 
 import ".././assets/css/style.css";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
@@ -168,8 +170,8 @@ function HomeScreen() {
         <div className="container">
           <div className="section-title"></div>
           <div className="row content">
-            <div className="col-lg-6">
-              <div className="col-lg-6 order-1 order-lg-2 hero-img">
+            <div className="col-lg-6 order-lg-1">
+              <div className="col-lg-6 hero-img">
                 <img
                   src={secondabout}
                   style={{width: 1350}}
@@ -178,16 +180,16 @@ function HomeScreen() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 pt-4 pt-lg-0">
+            <div className="col-lg-6 pt-4 pt-lg-0 order-lg-2">
               <div>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <div>
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
+                  <div style={{ textAlign: "right" }}>
                     <h2 style={{color: "black"}}> NACOS MTU </h2>
-                    <p style={{fontFamily: "Cabinet Grotesk"}}> Brief History of NACOS MTU CHAPTER </p>
+                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Brief History of NACOS MTU CHAPTER </h3>
                   </div>
                   <img src={question} alt="question" style={{ marginLeft: "20px" }} />
                 </div>
-              </div>
+              </div> <br />
               <p style={{fontFamily: "Cabinet Grotesk", fontSize: "140%"}}>
                 The Nigerian Association of Computing Students (NACOS) is a student professional body that is now present in almost every tertiary institution in Nigeria. The primary aim is to connect all students and alumna of the college of computing to each other. NACOS came to Mountain Top University in 2021 and the MTU Chapter has grown rapidly since then. 
               </p>
@@ -197,10 +199,23 @@ function HomeScreen() {
       </section>
 
       {/* Executives section */}
-      <section id="services" className="services">
-        <div className="container" data-aos="fade-up">
-          <div className="section-title">
-            <h2> Executives </h2>
+      <section id="about" className="about">
+        <div className="container">
+          <div className="section-title"></div>
+          <div className="row content">
+            <div className="col-lg-6">
+              <div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <img src={user} alt="question" style={{ marginRight: "20px" }} />
+                  <div>
+                    <h2 style={{ color: "#000000", fontSize: "230%"}}> Executives </h2>
+                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Meet the Executtive Committee </h3>
+                  </div>
+                </div> <br/>
+                  <img src={rightarrow} alt="rightarrow" />
+              </div>
+            </div>
+           
           </div>
         </div>
       </section>
