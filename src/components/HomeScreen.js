@@ -215,7 +215,7 @@ function HomeScreen() {
               </div>
             </div>
             <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
-              <img src={rightarrow} alt="rightarrow" />
+              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "80px",  width: "80px" }} />
             </div>
           </div>
         </div>
