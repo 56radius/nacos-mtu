@@ -229,10 +229,10 @@ function HomeScreen() {
         </div>
         <div class="team-card-content">
           <p class="text-blk name">
-            Roger Lubin
+            Merit Mohammed
           </p>
           <p class="text-blk position">
-            CEO
+            PRESIDENT
           </p>
         </div>
       </div>
