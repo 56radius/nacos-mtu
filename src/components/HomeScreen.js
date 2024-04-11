@@ -10,6 +10,7 @@ import question from "../assets/img/question.png";
 import background from "../assets/img/frame.jpg"; // Path to your background image
 import user from "../assets/img/user.png";
 import rightarrow from "../assets/img/rightarrow.png";
+import picture from "../assets/img/picture.jpg";
 
 import ".././assets/css/style.css";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
@@ -99,11 +100,11 @@ function HomeScreen() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1 style={{ color: "#fff" }}>
+              <h1 style={{ color: "#fff", fontSize: "340%" }}>
                 POWERED BY <br /> COMPUTER SCIENCE
               </h1>
               <ul>
-                <h2 style={{ color: "#fff" }}> Empowered to Excel </h2>
+                <h2 style={{ color: "#fff", fontSize: "240%" }}> Empowered to Excel </h2>
               </ul>
               <div className="mt-3">
                 <button
@@ -138,7 +139,7 @@ function HomeScreen() {
       </section>
 
       {/* First About */}
-      <section id="about" className="about">
+      <section id="about" style={{marginTop: "90px"}} className="about">
         <div className="container">
           <div className="section-title"></div>
           <div className="row content">
@@ -199,7 +200,7 @@ function HomeScreen() {
       </section>
 
       {/* Executives section */}
-      <section id="about" className="about">
+      <section id="about" style={{marginTop: "60px"}} className="about">
         <div className="container">
           <div className="section-title"></div>
           <div className="row content">
@@ -219,9 +220,71 @@ function HomeScreen() {
             </div>
           </div>
 
-          <div>
-            <img src={nacoslogo} alt="nacoslogo" />
-          </div>
+          <div class="container-block container">
+  <div class="responsive-container-block teamcard-container">
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img class="team-img" src={picture} />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">
+            Roger Lubin
+          </p>
+          <p class="text-blk position">
+            CEO
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">
+            Roger Lubin
+          </p>
+          <p class="text-blk position">
+            CEO
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">
+            Roger Lubin
+          </p>
+          <p class="text-blk position">
+            CEO
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">
+            Roger Lubin
+          </p>
+          <p class="text-blk position">
+            CEO
+          </p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
         </div>
       </section>
 
