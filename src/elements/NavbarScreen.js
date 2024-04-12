@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import logo from "../assets/img/logo.png";
 
 import ".././assets/css/style.css";
@@ -10,7 +12,8 @@ import ".././assets/vendor/glightbox/css/glightbox.min.css";
 import ".././assets/vendor/remixicon/remixicon.css";
 import ".././assets/vendor/swiper/swiper-bundle.min.css";
 
-function NavbarScreen(navigate) {
+function NavbarScreen() {
+    const navigate = useNavigate();
     return(
         <div>
                 <header id="header" className="fixed-top">
@@ -34,12 +37,12 @@ function NavbarScreen(navigate) {
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <a className="nav-link scrollto active" href="#hero">
+                <a className="nav-link scrollto active" onClick={() => navigate("/")}>
                   <span id="Love"> Home </span>
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#about">
+                <a className="nav-link scrollto" onClick={() => navigate("/about")}>
                   About
                 </a>
               </li>
