@@ -200,93 +200,84 @@ function HomeScreen() {
       </section>
 
       {/* Executives section */}
-      <section id="about" style={{marginTop: "60px"}} className="about">
-        <div className="container">
-          <div className="section-title"></div>
-          <div className="row content">
-            <div className="col-lg-6">
-              <div>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <img src={user} alt="question" style={{ marginRight: "20px" }} />
-                  <div>
-                    <h2 style={{ color: "#000000", fontSize: "230%"}}> Executives </h2>
-                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Meet the Executtive Committee </h3>
-                  </div>
-                </div> <br/>
-              </div>
-            </div>
-            <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
-              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "80px",  width: "80px" }} />
+{/* Executives pictures section */}
+<section id="executives" style={{ marginTop: "60px" }}>
+  <div className="container">
+    <div className="section-title"></div>
+    <div className="row content">
+      <div className="col-lg-6">
+        <div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src={user} alt="user" style={{ marginRight: "20px" }} />
+            <div>
+              <h2 style={{ color: "#000000", fontSize: "230%" }}> Executives </h2> <br />
+              <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Meet the Executive Committee </h3>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
+        <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "80px", width: "80px" }} />
+      </div>
+    </div>
 
-          <div class="container-block container">
-  <div class="responsive-container-block teamcard-container">
-    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
-      <div class="team-card">
-        <div class="team-img-wrapper">
-          <img class="team-img" src={picture} />
+    <div style={{marginTop: "5%"}} className="row">
+      <div className="col-lg-6">
+        <div className="team-card-container">
+          <div className="team-card">
+            <div className="team-img-wrapper">
+              <img className="team-img" src={picture} style={{ maxHeight: "20%", maxWidth: "90%", borderRadius: "5px" }} />
+            </div>
+            <div className="team-card-content">
+              <p className="text-blk name">Merit Mohammed</p>
+              <p className="text-blk position">PRESIDENT</p>
+            </div>
+          </div>
         </div>
-        <div class="team-card-content">
-          <p class="text-blk name">
-            Merit Mohammed
-          </p>
-          <p class="text-blk position">
-            PRESIDENT
-          </p>
+      </div>
+      <div className="col-lg-2">
+        <div className="team-card-container">
+          <div className="team-card">
+            <div className="team-img-wrapper">
+              <img className="team-img" src={picture} style={{ height: "auto", maxWidth: "100%", borderRadius: "5px" }} />
+            </div>
+            <div className="team-card-content">
+              <p className="text-blk name">Roger Lubin</p>
+              <p className="text-blk position">CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-2">
+        <div className="team-card-container">
+          <div className="team-card">
+            <div className="team-img-wrapper">
+              <img className="team-img" src={picture} style={{ height: "auto", maxWidth: "100%", borderRadius: "5px" }} />
+            </div>
+            <div className="team-card-content">
+              <p className="text-blk name">Roger Lubin</p>
+              <p className="text-blk position">CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-2">
+        <div className="team-card-container">
+          <div className="team-card">
+            <div className="team-img-wrapper">
+              <img className="team-img" src={picture} style={{ height: "auto", maxWidth: "100%", borderRadius: "5px" }} />
+            </div>
+            <div className="team-card-content">
+              <p className="text-blk name">Roger Lubin</p>
+              <p className="text-blk position">CEO</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
-      <div class="team-card">
-        <div class="team-img-wrapper">
-          <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg" />
-        </div>
-        <div class="team-card-content">
-          <p class="text-blk name">
-            Roger Lubin
-          </p>
-          <p class="text-blk position">
-            CEO
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
-      <div class="team-card">
-        <div class="team-img-wrapper">
-          <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg" />
-        </div>
-        <div class="team-card-content">
-          <p class="text-blk name">
-            Roger Lubin
-          </p>
-          <p class="text-blk position">
-            CEO
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
-      <div class="team-card">
-        <div class="team-img-wrapper">
-          <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg" />
-        </div>
-        <div class="team-card-content">
-          <p class="text-blk name">
-            Roger Lubin
-          </p>
-          <p class="text-blk position">
-            CEO
-          </p>
-        </div>
-      </div>
-    </div>
-  
   </div>
-</div>
-        </div>
-      </section>
+</section>
+
 
       {/* Events */}
     </div>
