@@ -11,6 +11,7 @@ import background from "../assets/img/frame.jpg"; // Path to your background ima
 import user from "../assets/img/user.png";
 import rightarrow from "../assets/img/rightarrow.png";
 import picture from "../assets/img/picture.jpg";
+import merit from "../assets/img/merit.jpeg";
 
 import ".././assets/css/style.css";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
@@ -135,84 +136,83 @@ function HomeScreen() {
       </section>
 
       {/* Executives section */}
-{/* Executives pictures section */}
-<section id="executives" style={{ marginTop: "60px" }}>
-  <div className="container">
-    <div className="section-title"></div>
-    <div className="row content">
-      <div className="col-lg-6">
-        <div>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <img src={user} alt="user" style={{ marginRight: "20px" }} />
-            <div>
-              <h2 style={{ color: "#000000", fontSize: "230%" }}> Executives </h2> <br />
-              <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Meet the Executive Committee </h3>
+      {/* Executives pictures section */}
+      <section id="executives" style={{ marginTop: "60px" }}>
+        <div className="container">
+          <div className="section-title"></div>
+          <div className="row content">
+            <div className="col-lg-6">
+              <div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <img src={user} alt="user" style={{ marginRight: "20px" }} />
+                  <div>
+                    <h2 style={{ color: "#000000", fontSize: "230%" }}> Executives </h2> <br />
+                    <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Meet the Executive Committee </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
+              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "80px", width: "80px" }} />
             </div>
           </div>
-        </div>
-      </div>
-      <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
-        <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "80px", width: "80px" }} />
-      </div>
-    </div>
 
-    <div style={{marginTop: "5%"}} className="row">
-      <div className="col-lg-6">
-        <div className="team-card-container">
-          <div className="team-card">
-            <div className="team-img-wrapper">
-              <img className="team-img" src={picture} style={{ maxHeight: "20%", maxWidth: "90%", borderRadius: "5px" }} />
+          <div style={{marginTop: "5%"}} className="row">
+            <div className="col-lg-6">
+              <div className="team-card-container">
+                <div className="team-card">
+                  <div className="team-img-wrapper">
+                    <img className="team-img" src={merit} style={{ width: "543px", height: "690px", borderRadius: "5px" }} />
+                  </div>
+                  <div className="team-card-content">
+                    <p className="text-blk name">Merit Mohammed</p>
+                    <p className="text-blk position">PRESIDENT</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="team-card-content">
-              <p className="text-blk name">Merit Mohammed</p>
-              <p className="text-blk position">PRESIDENT</p>
+            <div className="col-lg-2" style={{marginLeft: "-100px"}}>
+              <div className="team-card-container">
+                <div className="team-card">
+                  <div className="team-img-wrapper">
+                    <img className="team-img" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px" }} />
+                  </div>
+                  <div className="team-card-content">
+                    <p className="text-blk name">Roger Lubin</p>
+                    <p className="text-blk position">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-2" style={{marginLeft: "20px"}}>
+              <div className="team-card-container">
+                <div className="team-card">
+                  <div className="team-img-wrapper">
+                    <img className="team-img" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px" }} />
+                  </div>
+                  <div className="team-card-content">
+                    <p className="text-blk name">Roger Lubin</p>
+                    <p className="text-blk position">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-2" style={{marginLeft: "20px"}}>
+              <div className="team-card-container">
+                <div className="team-card">
+                  <div className="team-img-wrapper">
+                    <img className="team-img" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px" }} />
+                  </div>
+                  <div className="team-card-content">
+                    <p className="text-blk name">Roger Lubin</p>
+                    <p className="text-blk position">CEO</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="col-lg-2">
-        <div className="team-card-container">
-          <div className="team-card">
-            <div className="team-img-wrapper">
-              <img className="team-img" src={picture} style={{ height: "auto", maxWidth: "100%", borderRadius: "5px" }} />
-            </div>
-            <div className="team-card-content">
-              <p className="text-blk name">Roger Lubin</p>
-              <p className="text-blk position">CEO</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-2">
-        <div className="team-card-container">
-          <div className="team-card">
-            <div className="team-img-wrapper">
-              <img className="team-img" src={picture} style={{ height: "auto", maxWidth: "100%", borderRadius: "5px" }} />
-            </div>
-            <div className="team-card-content">
-              <p className="text-blk name">Roger Lubin</p>
-              <p className="text-blk position">CEO</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-2">
-        <div className="team-card-container">
-          <div className="team-card">
-            <div className="team-img-wrapper">
-              <img className="team-img" src={picture} style={{ height: "auto", maxWidth: "100%", borderRadius: "5px" }} />
-            </div>
-            <div className="team-card-content">
-              <p className="text-blk name">Roger Lubin</p>
-              <p className="text-blk position">CEO</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Events */}
     </div>
