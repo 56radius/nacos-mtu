@@ -15,6 +15,19 @@ function AboutScreen() {
         <div>
                 {/* first header */}
       <NavbarScreen />
+
+         <h2 
+            style={{
+                marginTop: "160px", 
+                textAlign: "center", 
+                fontFamily: "Cabinet Grotesk", 
+                fontWeight: 'bold', 
+                color: "#000000", 
+                lineHeight: "45px"
+            }}
+         > 
+         About NACOS 
+        </h2>
         </div>
     );
 }
