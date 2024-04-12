@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import bottomright from "../assets/img/bottomright.png";
@@ -23,9 +23,18 @@ import ".././assets/vendor/swiper/swiper-bundle.min.css";
 
 import NavbarScreen from "../elements/NavbarScreen";
 
-
 function HomeScreen() {
   const navigate = useNavigate();
+  const [expandedImg, setExpandedImg] = useState(null);
+
+  const handleImgClick = (img) => {
+    if (expandedImg === img) {
+      setExpandedImg(null);
+    } else {
+      setExpandedImg(img);
+    }
+  };
+
   return (
     <div className="wrapper" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
       {/* first header */}
@@ -162,7 +171,7 @@ function HomeScreen() {
               <div className="team-card-container">
                 <div className="team-card">
                   <div className="team-img-wrapper">
-                    <img className="team-img" src={merit} style={{ width: "543px", height: "690px", borderRadius: "5px" }} />
+                    <img className="team-img" src={merit} style={{ width: "543px", height: "690px", borderRadius: "5px", filter: expandedImg === merit ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(merit)} />
                   </div>
                   <div className="team-card-content">
                     <p className="text-blk name">Merit Mohammed</p>
@@ -175,7 +184,7 @@ function HomeScreen() {
               <div className="team-card-container">
                 <div className="team-card">
                   <div className="team-img-wrapper">
-                    <img className="team-img" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px" }} />
+                    <img className="team-img grayscale" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
                   </div>
                   <div className="team-card-content">
                     <p className="text-blk name">Roger Lubin</p>
@@ -188,7 +197,7 @@ function HomeScreen() {
               <div className="team-card-container">
                 <div className="team-card">
                   <div className="team-img-wrapper">
-                    <img className="team-img" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px" }} />
+                    <img className="team-img grayscale" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
                   </div>
                   <div className="team-card-content">
                     <p className="text-blk name">Roger Lubin</p>
@@ -201,7 +210,7 @@ function HomeScreen() {
               <div className="team-card-container">
                 <div className="team-card">
                   <div className="team-img-wrapper">
-                    <img className="team-img" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px" }} />
+                    <img className="team-img grayscale" src={nacoslogo} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
                   </div>
                   <div className="team-card-content">
                     <p className="text-blk name">Roger Lubin</p>
