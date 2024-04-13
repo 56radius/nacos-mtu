@@ -167,7 +167,7 @@ function HomeScreen() {
               <div className="team-card-container">
                 <div className="team-card">
                   <div className="team-img-wrapper">
-                    <img className="team-img" src={merit} style={{ width: "543px", height: "690px", borderRadius: "5px", filter: expandedImg === merit ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(merit)} />
+                    <img className="team-img" src={merit} style={{ width: expandedImg === merit ? "543px" : "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === merit ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(merit)} />
                   </div>
                   <div className="team-card-content">
                     <p className="text-blk name">Merit Mohammed</p>
