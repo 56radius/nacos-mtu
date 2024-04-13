@@ -25,14 +25,10 @@ import NavbarScreen from "../elements/NavbarScreen";
 
 function HomeScreen() {
   const navigate = useNavigate();
-  const [expandedImg, setExpandedImg] = useState(null);
+  const [expandedImg, setExpandedImg] = useState(picture);
 
   const handleImgClick = (img) => {
-    if (expandedImg === img) {
-      setExpandedImg(null);
-    } else {
-      setExpandedImg(img);
-    }
+    setExpandedImg(img === expandedImg ? null : img);
   };
 
   return (
@@ -162,7 +158,7 @@ function HomeScreen() {
               </div>
             </div>
             <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
-              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "80px", width: "80px" }} />
+              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "70px", width: "70px" }} />
             </div>
           </div>
 
@@ -210,7 +206,7 @@ function HomeScreen() {
               <div className="team-card-container">
                 <div className="team-card">
                   <div className="team-img-wrapper">
-                    <img className="team-img grayscale" src={nacoslogo} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
+                    <img className="team-img grayscale" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
                   </div>
                   <div className="team-card-content">
                     <p className="text-blk name">Roger Lubin</p>
