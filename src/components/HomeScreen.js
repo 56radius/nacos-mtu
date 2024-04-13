@@ -25,10 +25,10 @@ import NavbarScreen from "../elements/NavbarScreen";
 
 function HomeScreen() {
   const navigate = useNavigate();
-  const [expandedImg, setExpandedImg] = useState(picture);
+  const [expandedImg, setExpandedImg] = useState(null);
 
   const handleImgClick = (img) => {
-    setExpandedImg(img === expandedImg ? null : img);
+    setExpandedImg((prevImg) => (prevImg === img ? null : img));
   };
 
   return (
@@ -144,7 +144,7 @@ function HomeScreen() {
       {/* Executives pictures section */}
       <section id="executives" style={{ marginTop: "60px" }}>
         <div className="container">
-          <div className="section-title"></div>
+         
           <div className="row content">
             <div className="col-lg-6">
               <div>
