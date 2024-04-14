@@ -116,9 +116,10 @@ function HomeScreen() {
               <div className="col-lg-6 hero-img">
                 <img
                   src={secondabout}
-                  style={{width: 1350}}
+                  style={{width: expandedImg === 'secondabout' ? "1350px" : "543px"}}
                   className="img-fluid"
                   alt="aboutlogo"
+                  onClick={() => handleImgClick('secondabout')}
                 />
               </div>
             </div>
@@ -143,81 +144,77 @@ function HomeScreen() {
       {/* Executives section */}
       {/* Executives pictures section */}
       <section id="executives" style={{ marginTop: "60px" }}>
-        <div className="container">
-         
-          <div className="row content">
-            <div className="col-lg-6">
-              <div>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <img src={user} alt="user" style={{ marginRight: "20px" }} />
-                  <div>
-                    <h2 style={{ color: "#000000", fontSize: "230%" }}> Executives </h2> <br />
-                    <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Meet the Executive Committee </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
-              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "70px", width: "70px" }} />
-            </div>
-          </div>
+  <div className="container">
 
-          <div style={{marginTop: "5%"}} className="row">
-            <div className="col-lg-6">
-              <div className="team-card-container">
-                <div className="team-card">
-                  <div className="team-img-wrapper">
-                    <img className="team-img" src={merit} style={{ width: expandedImg === merit ? "543px" : "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === merit ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(merit)} />
-                  </div>
-                  <div className="team-card-content">
-                    <p className="text-blk name">Merit Mohammed</p>
-                    <p className="text-blk position">PRESIDENT</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2" style={{marginLeft: "-100px"}}>
-              <div className="team-card-container">
-                <div className="team-card">
-                  <div className="team-img-wrapper">
-                    <img className="team-img grayscale" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
-                  </div>
-                  <div className="team-card-content">
-                    <p className="text-blk name">Roger Lubin</p>
-                    <p className="text-blk position">CEO</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2" style={{marginLeft: "20px"}}>
-              <div className="team-card-container">
-                <div className="team-card">
-                  <div className="team-img-wrapper">
-                    <img className="team-img grayscale" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
-                  </div>
-                  <div className="team-card-content">
-                    <p className="text-blk name">Roger Lubin</p>
-                    <p className="text-blk position">CEO</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-2" style={{marginLeft: "20px"}}>
-              <div className="team-card-container">
-                <div className="team-card">
-                  <div className="team-img-wrapper">
-                    <img className="team-img grayscale" src={picture} style={{ width: "226.5px", height: "690px", borderRadius: "5px", filter: expandedImg === picture ? "none" : "grayscale(100%)" }} onClick={() => handleImgClick(picture)} />
-                  </div>
-                  <div className="team-card-content">
-                    <p className="text-blk name">Roger Lubin</p>
-                    <p className="text-blk position">CEO</p>
-                  </div>
-                </div>
-              </div>
+    <div className="row content">
+      <div className="col-lg-6">
+        <div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src={user} alt="user" style={{ marginRight: "20px" }} />
+            <div>
+              <h2 style={{ color: "#000000", fontSize: "230%" }}> Executives </h2> <br />
+              <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Meet the Executive Committee </h3>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
+        <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "70px", width: "70px" }} />
+      </div>
+    </div>
+
+    <div style={{ marginTop: "5%" }} className="row">
+      <div className="col-lg-6">
+        <div className="team-card-container">
+          <div className="team-card">
+            <div className="team-img-wrapper">
+              <img
+                className="team-img"
+                src={merit}
+                style={{
+                  width: expandedImg === 'merit' ? "543px" : "226.5px",
+                  height: "690px",
+                  borderRadius: "5px",
+                  filter: expandedImg === 'merit' ? "none" : "grayscale(100%)",
+                  transition: "all 0.5s ease-in-out"
+                }}
+                onClick={() => handleImgClick('merit')}
+              />
+            </div>
+            <div className="team-card-content">
+              <p className="text-blk name">Merit Mohammed</p>
+              <p className="text-blk position">PRESIDENT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-6" style={{ marginLeft: "-100px" }}>
+        <div className="team-card-container">
+          <div className="team-card">
+            <div className="team-img-wrapper">
+              <img
+                className="team-img grayscale"
+                src={picture}
+                style={{
+                  width: expandedImg === 'picture' ? "543px" : "226.5px",
+                  height: "690px",
+                  borderRadius: "5px",
+                  filter: expandedImg === 'picture' ? "none" : "grayscale(100%)",
+                  transition: "all 0.5s ease-in-out"
+                }}
+                onClick={() => handleImgClick('picture')}
+              />
+            </div>
+            <div className="team-card-content">
+              <p className="text-blk name">Roger Lubin</p>
+              <p className="text-blk position">CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Events */}
     </div>
