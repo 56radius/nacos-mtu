@@ -8,6 +8,8 @@ import question from "../assets/img/question.png";
 import user from "../assets/img/user.png";
 import rightarrow from "../assets/img/rightarrow.png";
 import bottomright from "../assets/img/bottomright.png";
+import aboutlogo from "../assets/img/aboutlogo.png";
+import secondabout from "../assets/img/secondabout.png";
 import merit from "../assets/img/merit.jpeg";
 import events from "../assets/img/events.png";
 
@@ -24,13 +26,7 @@ function HomeScreen() {
   const [expandedImg, setExpandedImg] = useState(null);
 
   const handleImgClick = (img) => {
-    setExpandedImg((prevImg) => {
-      if (prevImg === img) {
-        return null; // Collapse the clicked image if it is already expanded
-      } else {
-        return img; // Expand the clicked image
-      }
-    });
+    setExpandedImg(img === expandedImg ? null : img); // Toggle expanded image
   };
 
   return (
@@ -102,7 +98,7 @@ function HomeScreen() {
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0">
               <div className="col-lg-6 order-1 order-lg-2 hero-img">
-                <img src={merit} style={{ width: expandedImg === 'merit' ? "1350px" : "523px", transition: "all 0.5s ease-in-out" }} className="img-fluid" alt="aboutlogo" />
+                <img src={aboutlogo} style={{ width: "523px", transition: "all 0.5s ease-in-out" }} className="img-fluid" alt="aboutlogo" />
               </div>
             </div>
           </div>
@@ -117,11 +113,11 @@ function HomeScreen() {
             <div className="col-lg-6 order-lg-1">
               <div className="col-lg-6 hero-img">
                 <img
-                  src={events}
-                  style={{width: expandedImg === 'events' ? "1350px" : "543px"}}
+                  src={secondabout}
+         
                   className="img-fluid"
                   alt="aboutlogo"
-                  onClick={() => handleImgClick('events')}
+               
                 />
               </div>
             </div>
@@ -129,49 +125,15 @@ function HomeScreen() {
               <div>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
                   <div style={{ textAlign: "right" }}>
-                    <h2 style={{color: "black"}}> Events </h2>
-                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Stay up to date </h3>
+                    <h2 style={{color: "black"}}> NACOS MTU </h2>
+                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Brief History of the MTU chapter </h3>
                   </div>
                   <img src={question} alt="question" style={{ marginLeft: "20px" }} />
                 </div>
               </div> <br />
               <p style={{fontFamily: "Cabinet Grotesk", fontSize: "140%"}}>
-                Stay informed about upcoming events in the computing world and never miss out on opportunities for learning and networking.
+              The Nigerian Association of Computing Students (NACOS) is a student professional body that is now present in almost every tertiary institution in Nigeria. The primary aim is to connect all students and alumni of the college of computing to each other. NACOS came to Mountain Top University in 2021 and the MTU Chapter has grown rapidly since then. 
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Third About section */}
-      <section id="about" className="about">
-        <div className="container">
-          <div className="section-title"></div>
-          <div className="row content">
-            <div className="col-lg-6">
-              <div>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <img src={question} alt="question" style={{ marginRight: "20px" }} />
-                  <div>
-                    <h2 style={{ color: "#000000", fontSize: "230%"}}> Third Section </h2>
-                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Brief Description </h3>
-                  </div>
-                </div> <br/>
-                <p style={{ fontFamily: "Cabinet Grotesk", fontSize: "140%" }}>
-                  This is the third section. You can add your content here.
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6 pt-4 pt-lg-0">
-              <div className="col-lg-6 order-1 order-lg-2 hero-img">
-                <img
-                  src={events}
-                  style={{ width: expandedImg === 'third' ? "1350px" : "523px", transition: "all 0.5s ease-in-out" }}
-                  className="img-fluid"
-                  alt="aboutlogo"
-                  onClick={() => handleImgClick('third')}
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -208,7 +170,7 @@ function HomeScreen() {
                       className="team-img"
                       src={merit}
                       style={{
-                        width: expandedImg === 'events' || expandedImg === 'third' ? "226.5px" : "523px",
+                        width: expandedImg === 'merit' ? "226.5px" : "523px",
                         height: "690px",
                         borderRadius: "5px",
                         transition: "all 0.5s ease-in-out"
@@ -258,13 +220,42 @@ function HomeScreen() {
                       className="team-img"
                       src={merit}
                       style={{
-                        width: expandedImg === 'third' ? "523px" : "226.5px",
+                        width: expandedImg === 'user' ? "523px" : "226.5px",
                         height: "690px",
                         borderRadius: "5px",
                         transition: "all 0.5s ease-in-out"
                       }}
-                      onClick={() => handleImgClick('third')}
+                      onClick={() => handleImgClick('user')}
                     />
+                    <div style={{ position: "absolute", bottom: "10px", left: "10px", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)", padding: "5px" }}>
+                      <p className="text-white name">User</p>
+                      <p className="text-white position">Description</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            {/* Fourth Image */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <div className="team-card-container">
+                <div className="team-card">
+                  <div className="team-img-wrapper" style={{ position: "relative" }}>
+                    <img
+                      className="team-img"
+                      src={merit}
+                      style={{
+                        width: expandedImg === 'rightarrow' ? "523px" : "226.5px",
+                        height: "690px",
+                        borderRadius: "5px",
+                        transition: "all 0.5s ease-in-out"
+                      }}
+                      onClick={() => handleImgClick('rightarrow')}
+                    />
+                    <div style={{ position: "absolute", bottom: "10px", left: "10px", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)", padding: "5px" }}>
+                      <p className="text-white name">Right Arrow</p>
+                      <p className="text-white position">Description</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -272,8 +263,32 @@ function HomeScreen() {
           </div>
         </div>
       </section>
+
+        {/*Events section */}
+        <section id="executives" style={{ marginTop: "60px" }}>
+        <div className="container">
+
+          <div className="row content">
+            <div className="col-lg-6">
+              <div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <img src={events} alt="user" style={{ marginRight: "20px" }} />
+                  <div>
+                    <h2 style={{ color: "#000000", fontSize: "230%" }}> Events </h2> <br />
+                    <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Stay up to date</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
+              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "70px", width: "70px" }} />
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 }
-
+  
 export default HomeScreen;
