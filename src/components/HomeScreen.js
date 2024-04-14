@@ -143,6 +143,40 @@ function HomeScreen() {
         </div>
       </section>
 
+      {/* Third About section */}
+      <section id="about" className="about">
+        <div className="container">
+          <div className="section-title"></div>
+          <div className="row content">
+            <div className="col-lg-6">
+              <div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <img src={question} alt="question" style={{ marginRight: "20px" }} />
+                  <div>
+                    <h2 style={{ color: "#000000", fontSize: "230%"}}> Third Section </h2>
+                    <h3 style={{ fontFamily: "Cabinet Grotesk",  marginTop: "-6%", fontSize: "150%"  }}> Brief Description </h3>
+                  </div>
+                </div> <br/>
+                <p style={{ fontFamily: "Cabinet Grotesk", fontSize: "140%" }}>
+                  This is the third section. You can add your content here.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6 pt-4 pt-lg-0">
+              <div className="col-lg-6 order-1 order-lg-2 hero-img">
+                <img
+                  src={events}
+                  style={{ width: expandedImg === 'third' ? "1350px" : "523px", transition: "all 0.5s ease-in-out" }}
+                  className="img-fluid"
+                  alt="aboutlogo"
+                  onClick={() => handleImgClick('third')}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Executives section */}
       <section id="executives" style={{ marginTop: "60px" }}>
         <div className="container">
@@ -174,7 +208,7 @@ function HomeScreen() {
                       className="team-img"
                       src={merit}
                       style={{
-                        width: expandedImg === 'events' ? "226.5px" : "523px",
+                        width: expandedImg === 'events' || expandedImg === 'third' ? "226.5px" : "523px",
                         height: "690px",
                         borderRadius: "5px",
                         transition: "all 0.5s ease-in-out"
@@ -199,7 +233,6 @@ function HomeScreen() {
                       className="team-img"
                       src={merit}
                       style={{
-                        marginLeft: "220px",
                         width: expandedImg === 'events' ? "523px" : "226.5px",
                         height: "690px",
                         borderRadius: "5px",
@@ -207,7 +240,31 @@ function HomeScreen() {
                       }}
                       onClick={() => handleImgClick('events')}
                     />
-                   
+                    <div style={{ position: "absolute", bottom: "10px", left: "10px", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)", padding: "5px" }}>
+                      <p className="text-white name">Events</p>
+                      <p className="text-white position">Stay up to date</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Third Image */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <div className="team-card-container">
+                <div className="team-card">
+                  <div className="team-img-wrapper" style={{ position: "relative" }}>
+                    <img
+                      className="team-img"
+                      src={merit}
+                      style={{
+                        width: expandedImg === 'third' ? "523px" : "226.5px",
+                        height: "690px",
+                        borderRadius: "5px",
+                        transition: "all 0.5s ease-in-out"
+                      }}
+                      onClick={() => handleImgClick('third')}
+                    />
                   </div>
                 </div>
               </div>
