@@ -7,6 +7,7 @@ import mtulogo from "../assets/img/mtulogo.png";
 import question from "../assets/img/question.png";
 import user from "../assets/img/user.png";
 import rightarrow from "../assets/img/rightarrow.png";
+import bottomright from "../assets/img/bottomright.png";
 import merit from "../assets/img/merit.jpeg";
 import events from "../assets/img/events.png";
 
@@ -74,6 +75,9 @@ function HomeScreen() {
             <br />
             AND MOUNTAIN TOP UNIVERSITY
           </h2>
+        </div>
+        <div className="position-absolute bottom-0 end-0">
+          <img src={bottomright} alt="bottomright" />
         </div>
       </section>
 
@@ -203,10 +207,7 @@ function HomeScreen() {
                       }}
                       onClick={() => handleImgClick('events')}
                     />
-                    <div style={{ position: "absolute", bottom: "10px", left: "10px", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)", padding: "5px" }}>
-                      <p className="text-white name">Events</p>
-                      <p className="text-white position">Stay up to date</p>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
