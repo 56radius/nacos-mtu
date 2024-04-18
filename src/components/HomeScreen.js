@@ -266,27 +266,38 @@ function HomeScreen() {
 
         {/*Events section */}
         <section id="executives" style={{ marginTop: "60px" }}>
-        <div className="container">
-
-          <div className="row content">
-            <div className="col-lg-6">
-              <div>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <img src={events} alt="user" style={{ marginRight: "20px" }} />
-                  <div>
-                    <h2 style={{ color: "#000000", fontSize: "230%" }}> Events </h2> <br />
-                    <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Stay up to date</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
-              <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "70px", width: "70px" }} />
+  <div className="container">
+    <div className="row content">
+      <div className="col-lg-6">
+        <div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src={events} alt="user" style={{ marginRight: "20px" }} />
+            <div>
+              <h2 style={{ color: "#000000", fontSize: "230%" }}> Events </h2> <br />
+              <h3 style={{ fontFamily: "Cabinet Grotesk", marginTop: "-6%", fontSize: "150%" }}> Stay up to date</h3>
             </div>
           </div>
-
         </div>
-      </section>
+      </div>
+      <div className="col-lg-6 order-lg-2 d-flex justify-content-end">
+        <img src={rightarrow} alt="rightarrow" style={{ cursor: "pointer", height: "70px", width: "70px" }} />
+      </div>
+    </div>
+    
+    {/* Events card */}
+    <div 
+    style={{
+      width: "120px",
+      height: "130px",
+    }}
+    >
+        <h2> Hello </h2>
+    </div>
+  </div>
+</section>
+
+
+      {/* Announcem */}
     </div>
   );
 }
