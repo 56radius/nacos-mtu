@@ -52,7 +52,7 @@ function NavbarScreen() {
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#team">
+                <a className="nav-link scrollto" onClick={() => navigate("/library")} >
                   Library
                 </a>
               </li>

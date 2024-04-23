@@ -60,18 +60,7 @@ function HomeScreen() {
             </div>
           </div>
         </div>
-        <div className="position-absolute bottom-0 start-0 d-flex align-items-center" style={{ marginLeft: "250px" , marginBottom: "20px"}}>
-          <img src={nacoslogo} alt="nacoslogo" />
-          <span style={{ fontSize: "420%", color: "#fff" }}> | </span>
-          <img src={mtulogo} alt="mtulogo" />
-          <h2 style={{ color: "#fff", marginLeft: "10px", fontSize: "100%" }}>
-            IN ASSOCIATION WITH
-            <br />
-            THE NIGERIAN ASSOCIATION OF COMPUTING STUDENTS
-            <br />
-            AND MOUNTAIN TOP UNIVERSITY
-          </h2>
-        </div>
+        
         <div className="position-absolute bottom-0 end-0">
           <img src={bottomright} alt="bottomright" />
         </div>
@@ -285,14 +274,58 @@ function HomeScreen() {
     </div>
     
     {/* Events card */}
+    {/* First Card */}
     <div 
     style={{
-      width: "120px",
-      height: "130px",
+      marginTop: "50px",
+      width: "500px",
+      height: "220px",
+      background: "white",
+      boxShadow: "0px 2px 15px rgba(0, 0, 0, 0.3)",
+      borderRadius: "15px",
+      justifyContent: "space-between",
     }}
     >
-        <h2> Hello </h2>
+        <h2 
+        style={{
+          fontSize: "190%",
+        }}
+        > 
+          Excursion
+        </h2>
+
+        <div>
+        <h2 style={{fontSize: "130%"}}> 16th February </h2>
+        </div>
     </div>
+
+    {/* Second Card */}
+    <div 
+    style={{
+      marginTop: "50px",
+      width: "500px",
+      height: "220px",
+      background: "white",
+      boxShadow: "0px 2px 15px rgba(0, 0, 0, 0.3)",
+      borderRadius: "15px",
+      justifyContent: "space-between",
+    }}
+    >
+        <h2 
+        style={{
+          justifyContent: "space-between",
+          flexDirection: "row",
+          fontSize: "190%",
+        }}
+        > 
+          Hackathon
+        </h2>
+
+        <div>
+        <h2 style={{fontSize: "130%"}}> 8th May, 2024 </h2>
+        </div>
+    </div>
+
   </div>
 </section>
 
